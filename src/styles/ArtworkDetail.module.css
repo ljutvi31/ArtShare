@@ -1,0 +1,6 @@
+.wrap{padding:24px 0}
+.grid{display:grid;gap:18px}
+@media (min-width:1024px){.grid{grid-template-columns:2fr 1fr}}
+.img{width:100%;border:1px solid var(--border);border-radius:var(--radius);object-fit:cover}
+.side h2{margin:0;font-size:24px}
+.by{color:var(--muted)}

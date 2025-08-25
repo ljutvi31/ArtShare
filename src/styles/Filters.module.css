@@ -1,0 +1,4 @@
+.wrap{display:flex;flex-wrap:wrap;gap:8px}
+.label{display:block;font-size:14px;color:#475569;margin-bottom:6px}
+.btn{padding:10px 12px;border:1px solid var(--border);border-radius:999px;background:#fff;color:#334155;cursor:pointer}
+.btnActive{background:var(--brand);color:#fff}

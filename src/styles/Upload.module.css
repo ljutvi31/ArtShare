@@ -1,0 +1,3 @@
+.form{display:grid;gap:12px;max-width:600px}
+.input,.select,.file{padding:10px 12px;border:1px solid var(--border);border-radius:12px;background:#fff}
+.btn{padding:10px 14px;border-radius:12px;background:var(--brand);color:#fff;border:0;cursor:pointer}
