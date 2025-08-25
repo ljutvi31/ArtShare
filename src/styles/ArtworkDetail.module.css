@@ -1,6 +1,123 @@
-.wrap{padding:24px 0}
-.grid{display:grid;gap:18px}
-@media (min-width:1024px){.grid{grid-template-columns:2fr 1fr}}
-.img{width:100%;border:1px solid var(--border);border-radius:var(--radius);object-fit:cover}
-.side h2{margin:0;font-size:24px}
-.by{color:var(--muted)}
+.wrap {
+  padding: 32px 0;
+}
+
+.grid {
+  display: grid;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+  }
+}
+
+.img {
+  width: 100%;
+  max-height: 70vh;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  object-fit: cover;
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition);
+}
+
+.img:hover {
+  box-shadow: var(--shadow-lg);
+  transform: scale(1.02);
+}
+
+.side {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow);
+  height: fit-content;
+}
+
+.side h2 {
+  margin: 0 0 12px;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.by {
+  color: var(--muted);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.style {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--brand-light);
+  color: var(--brand);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.likeBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: var(--brand);
+  color: white;
+  border: 0;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+  text-decoration: none;
+}
+
+.likeBtn:hover {
+  background: var(--brand-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  margin-bottom: 16px;
+}
+
+.backLink:hover {
+  color: var(--brand);
+  background: var(--brand-light);
+}
+
+.backLink::before {
+  content: "←";
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .side {
+    padding: 24px;
+  }
+  
+  .side h2 {
+    font-size: 24px;
+  }
+}
