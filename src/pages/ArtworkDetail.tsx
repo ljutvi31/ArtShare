@@ -47,7 +47,7 @@ export function ArtworkDetail(){
             onClick={()=>setItems(prev=>prev.map(x=>x.id===item.id?{...x, likes:x.likes+1}:x))} 
             className={styles.likeBtn}
           >
-            👍 <span>{item.likes} {t.like}</span>
+            👍 <span>{item.likes} {item.likes <= 1 ? t.like : t.likes}</span>
           </button>
         </div>
       </div>
