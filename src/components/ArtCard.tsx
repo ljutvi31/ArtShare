@@ -30,7 +30,7 @@ export function ArtCard({ item, totalForArtist, onLike }: { item: Artwork; total
             👍 <span>{item.likes} {item.likes <= 1 ? t.like : t.likes}</span>
           </button>
           <div className={styles.share}>
-            <button className={styles.btn} onClick={()=>shareOrOpen(item.title, text, url)}>🔗 <span>{t.share}</span></button>
+            <button className={styles.shareBtn} onClick={()=>shareOrOpen(item.title, text, url)}>🔗 <span>{t.share}</span></button>
             <a className={styles.link} href={links.facebook} target='_blank' rel='noreferrer'>FB</a>
             <a className={styles.link} href={links.linkedin} target='_blank' rel='noreferrer'>IN</a>
             <a className={styles.link} href={links.whatsapp} target='_blank' rel='noreferrer'>WA</a>
