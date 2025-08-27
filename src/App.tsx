@@ -1,7 +1,9 @@
 import { Outlet, Link, NavLink } from 'react-router-dom'
 import { useState } from 'react'
 import { STRINGS, LangKey } from './lib/i18n'
-import nav from './styles/Navbar.module.css'
+// doit correspondre EXACTEMENT au nouveau nom :
+import nav from './styles/Nav.module.css'
+
 
 export default function App() {
   const [lang, setLang] = useState<LangKey>('fr')

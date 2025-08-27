@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
-import styles from '../styles/Navbar.module.css'
+import styles from '../styles/Nav.module.css'
 import { useLang } from '../hooks'
 import { STRINGS } from '../lib/i18n'
 
