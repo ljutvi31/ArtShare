@@ -4,8 +4,8 @@
 
 .grid {
   display: grid;
-  gap: 32px;
-  margin-top: 24px;
+  gap: 12px;
+  margin-top: 14px;
 }
 
 @media (min-width: 1024px) {
