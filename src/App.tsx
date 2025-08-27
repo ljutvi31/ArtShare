@@ -1,8 +1,7 @@
 import { Outlet, Link, NavLink } from 'react-router-dom'
 import { useState } from 'react'
 import { STRINGS, LangKey } from './lib/i18n'
-// doit correspondre EXACTEMENT au nouveau nom :
-import nav from './styles/Nav.module.css'
+import nav from './styles/Navbar.module.css'
 
 
 export default function App() {
